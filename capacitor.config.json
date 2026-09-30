@@ -1,0 +1,6 @@
+{
+  "appId": "com.fruitfall.gravityfruitmatch",
+  "appName": "FruitFall - Gravity Fruit Match",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}
