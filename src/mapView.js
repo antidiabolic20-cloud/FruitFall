@@ -158,10 +158,25 @@ export class MapView {
             </svg>
 
             <!-- Top Celestial Champion Citadel Decor (Level 100 Peak) -->
-            <div class="top-citadel-decor" style="top: 20px; left: ${(firstNode.leftPercent / 100) * mapWidth}px;">
-              <div class="citadel-crown">👑</div>
-              <div class="citadel-title">HALL OF CHAMPIONS</div>
-              <div class="citadel-stars">⭐⭐⭐</div>
+            <div class="top-citadel-decor" style="top: 10px; left: ${(firstNode.leftPercent / 100) * mapWidth}px;">
+              <div class="citadel-sparkle-ring"></div>
+              <div class="citadel-crown-complex">
+                <span class="citadel-gem gem-left">◆</span>
+                <span class="citadel-main-crown">♛</span>
+                <span class="citadel-gem gem-right">◆</span>
+              </div>
+              <div class="citadel-title">⟡ HALL OF CHAMPIONS ⟡</div>
+              <div class="citadel-subtitle">Conquer All 100 Levels</div>
+              <div class="citadel-ornament">
+                <span>✦</span><span class="citadel-divider">━━━━━━━</span><span>✦</span>
+              </div>
+              <div class="citadel-stars-complex">
+                <span class="citadel-star-lg">★</span>
+                <span class="citadel-star-sm">✧</span>
+                <span class="citadel-star-lg">★</span>
+                <span class="citadel-star-sm">✧</span>
+                <span class="citadel-star-lg">★</span>
+              </div>
             </div>
 
             <!-- 10 World Header Banners (Positioned floating over path with z-index: 25) -->
@@ -200,14 +215,33 @@ export class MapView {
               `;
             }).join('')}
 
-            <!-- Bottom Welcome Archway & Start Garden Gate Decor -->
-            <div class="bottom-welcome-arch" style="top: ${totalMapHeight - 120}px; left: ${(lastNode.leftPercent / 100) * mapWidth}px;">
-              <div class="arch-banner-ribbon">
-                <span class="arch-icon">🏁</span>
-                <span>START YOUR JOURNEY!</span>
-                <span class="arch-icon">🍎</span>
+            <!-- Bottom Welcome Archway & Enchanted Start Gate -->
+            <div class="bottom-welcome-arch" style="top: ${totalMapHeight - 160}px; left: ${(lastNode.leftPercent / 100) * mapWidth}px;">
+              <div class="arch-sparkle-ring"></div>
+              <div class="arch-top-ornament">
+                <span class="arch-leaf">❧</span>
+                <span class="arch-diamond">◈</span>
+                <span class="arch-leaf mirror">❧</span>
               </div>
-              <div class="arch-flowers">🌸 🌻 🌳 🌺</div>
+              <div class="arch-banner-ribbon">
+                <span class="arch-ornament-edge">╔═══╗</span>
+              </div>
+              <div class="arch-main-title">
+                <span class="arch-glyph">⚜</span>
+                <span>BEGIN YOUR QUEST</span>
+                <span class="arch-glyph">⚜</span>
+              </div>
+              <div class="arch-subtitle">Tap Level 1 to Start!</div>
+              <div class="arch-divider">
+                <span>✦</span><span class="arch-divider-line">─── ⋆⋅☆⋅⋆ ───</span><span>✦</span>
+              </div>
+              <div class="arch-garden-row">
+                <span class="arch-flora flora-1">🌿</span>
+                <span class="arch-flora flora-2">🍃</span>
+                <span class="arch-flora flora-3">🌱</span>
+                <span class="arch-flora flora-4">🍀</span>
+                <span class="arch-flora flora-5">🌿</span>
+              </div>
             </div>
           </div>
 
