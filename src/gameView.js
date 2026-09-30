@@ -401,7 +401,7 @@ export class GameView {
     const currentLevelId = this.levelConfig.id;
     const nextLevelId = currentLevelId >= LEVELS.length ? 1 : currentLevelId + 1;
 
-    const currentHighest = parseInt(localStorage.getItem('gravity_fruit_highest_level') || '5', 10);
+    const currentHighest = parseInt(localStorage.getItem('gravity_fruit_highest_level') || '1', 10);
     if (nextLevelId > currentHighest) {
       localStorage.setItem('gravity_fruit_highest_level', nextLevelId.toString());
     }

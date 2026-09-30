@@ -12,7 +12,7 @@ export class MapView {
 
   getHighestUnlockedLevel() {
     const saved = localStorage.getItem('gravity_fruit_highest_level');
-    return saved ? parseInt(saved, 10) : 5;
+    return saved ? parseInt(saved, 10) : 1;
   }
 
   getLevelStars(levelId) {
